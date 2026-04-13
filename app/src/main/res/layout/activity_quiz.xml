@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="00:30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the output of the following code?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="32dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption1"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Option A"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="#BDBDBD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Option B"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="#BDBDBD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption3"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Option C"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="#BDBDBD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOption4"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Option D"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="#BDBDBD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExplain"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Explain Answer"
+        android:textSize="16sp"
+        android:textColor="#1976D2"
+        android:layout_marginBottom="24dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        android:backgroundTint="#FF6200EE" />
+
+</LinearLayout>

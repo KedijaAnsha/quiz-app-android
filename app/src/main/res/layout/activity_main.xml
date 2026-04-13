@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz App"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#202124"
+        android:layout_marginBottom="48dp" />
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnProgramming"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="Programming"
+    android:textSize="18sp"
+    android:layout_marginBottom="16dp"
+    app:cornerRadius="12dp"
+    android:backgroundTint="#E0E0E0"
+    android:textColor="#000000" />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnMath"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="Math"
+    android:textSize="18sp"
+    android:layout_marginBottom="16dp"
+    app:cornerRadius="12dp"
+    android:backgroundTint="#E0E0E0"
+    android:textColor="#000000" />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnScience"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="Science"
+    android:textSize="18sp"
+    android:layout_marginBottom="48dp"
+    app:cornerRadius="12dp"
+    android:backgroundTint="#E0E0E0"
+    android:textColor="#000000" />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnStartQuiz"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:text="Start Quiz"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#6200EE"
+    app:cornerRadius="16dp" />
+</LinearLayout>
