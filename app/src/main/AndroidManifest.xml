@@ -22,8 +22,8 @@
             </intent-filter>
         </activity>
 
-        <!-- Category Selection -->
-        <activity android:name=".activities.CategoryActivity" />
+        <!-- Main Screen -->
+        <activity android:name=".activities.MainActivity" />
 
         <!-- Quiz Screen -->
         <activity android:name=".activities.QuizActivity" />

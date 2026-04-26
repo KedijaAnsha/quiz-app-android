@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.quizapp.R;
+import com.example.quizapp.data.UserSession;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -60,9 +61,15 @@ public class SplashActivity extends AppCompatActivity {
         subtitleSet.setStartDelay(900);
         subtitleSet.start();
 
-        // Navigate to CategoryActivity after delay
+        // Navigate after delay
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, CategoryActivity.class);
+            UserSession session = new UserSession(SplashActivity.this);
+            Intent intent;
+            if (session.isLoggedIn()) {
+                intent = new Intent(SplashActivity.this, MainActivity.class);
+            } else {
+                intent = new Intent(SplashActivity.this, LoginActivity.class);
+            }
             startActivity(intent);
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             finish();
